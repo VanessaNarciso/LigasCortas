@@ -23,6 +23,7 @@ $('#login_button').on('click', function(){
     success: function(data){
       // guardar token en localstorage o cookie
       localStorage.setItem('token', data.token)
+      localStorage.setItem('empresa', data.company.nombre)
       window.location = 'index.html'
     },
     error: function(error_msg) {
