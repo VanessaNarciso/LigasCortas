@@ -24,6 +24,7 @@ $('#login_button').on('click', function(){
       // guardar token en localstorage o cookie
       localStorage.setItem('token', data.token)
       localStorage.setItem('empresa', data.company.nombre)
+      localStorage.setItem('empresaId', data.company._id)
       window.location = 'index.html'
     },
     error: function(error_msg) {
