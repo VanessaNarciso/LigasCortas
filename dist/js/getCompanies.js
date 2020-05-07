@@ -1,6 +1,10 @@
 
 
 function getCompanies() {
+    /*if(window.localStorage.tipo>0){
+        alert("No permitido entrar");
+        window.location = 'index.html';
+    }*/
     $.ajax({
         url: 'https://ligascortas.herokuapp.com/getCompanies',      
         headers: {
