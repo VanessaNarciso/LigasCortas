@@ -1,9 +1,20 @@
+const tipos = ['Admin Total','Admin empresa','Usuario empresa'];
+
+var select = document.getElementById('inputTipo');
+for (var i = parseInt(window.localStorage.tipo); i < 3; i++) {
+    var option = document.createElement("option");
+    option.text = tipos[i];
+    option.value = i;
+    select.appendChild(option);
+  }
+
 $('#create_button').on('click', function(){
     // cargar datos del form    
     let name = $('#inputName').val()
     let mail = $('#inputMail').val()
     let pass = $('#inputPass1').val()
     let contact = $('#inputCont').val()
+    let tipoUs = parseInt($('#inputTipo').val())
     let company = window.localStorage.empresaId
   
     json_to_send = {
@@ -11,6 +22,7 @@ $('#create_button').on('click', function(){
       "correo" : mail,
       "password" : pass,
       "numeroTelefono" : contact,
+      "tipo" : tipoUs,
       "partOf" : company
     };
   
