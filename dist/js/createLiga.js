@@ -47,5 +47,5 @@ $('#create_button').on('click', function(){
   };  
 
   $('#inputLigaCorta').on('input', function(e){
-    $('#ligaCortaCompleta').val(serverName +'/' +$('#inputLigaCorta').val());
+    $('#ligaCortaCompleta').val(serverName +'/liga/' +$('#inputLigaCorta').val());
   })
