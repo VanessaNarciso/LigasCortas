@@ -143,6 +143,15 @@
                             <form>
                                 <div class="form-group">
                                     <center>
+                                    <label class="font-weight-bold mb-1" for="inputName">
+                                        Nombre para identificar la liga
+                                    </label>
+                                    </center>
+                                    <input class="form-control py-4" id="inputName" type="url"
+                                        placeholder="Introduzca el nombre de la liga" />
+                                </div>
+                                <div class="form-group">
+                                    <center>
                                     <label class="font-weight-bold mb-1" for="inputURL">
                                         URL original
                                     </label>
@@ -153,14 +162,22 @@
                                 <div class="form-group">
                                     <center>
                                     <label class="font-weight-bold mb-1" for="inputLigaCorta">
-                                        URL corta
+                                        Código de URL corta
                                     </label>
                                     </center>
                                     <input class="form-control py-4" id="inputLigaCorta" type="url"
-                                        placeholder="Liga corta" />
+                                        placeholder="Código sin caracteres especiales" />                                    
+                                </div>
+                                <div class="form-group">
+                                    <center>
+                                    <label class="font-weight-bold mb-1" for="ligaCortaCompleta">
+                                        Liga corta será : 
+                                    </label>
+                                    </center>
+                                    <input class="form-control" id="ligaCortaCompleta" type="text" disabled/>                                    
                                 </div>
                                 <div class="form-group d-flex align-items-center justify-content-between mt-4 mb-0">
-                                    <a class="btn btn-primary text-white">
+                                    <a class="btn btn-primary text-white" id="create_button">
                                         Crear
                                     </a>
                                 </div>
@@ -177,6 +194,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"
         crossorigin="anonymous"></script>
     <script src="js/scripts.js"></script>
+    <script src="js/createLiga.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
 
 </body>

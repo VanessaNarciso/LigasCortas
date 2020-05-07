@@ -8,7 +8,7 @@ for (var i = parseInt(window.localStorage.tipo); i < 3; i++) {
     select.appendChild(option);
   }
 
-$('#create_button').on('click', function(){
+$('#create_button').on('click', function(){    
     // cargar datos del form    
     let name = $('#inputName').val()
     let mail = $('#inputMail').val()
