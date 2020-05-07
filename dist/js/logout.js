@@ -19,7 +19,7 @@ $('#btn_logout').on('click', function(){
     success: function(){
       alert("Cerrando Sesion");
       console.log('success: ');
-      window.location = 'index.html'
+      window.location = 'login.html'
     },
     error: function(error_msg) {
         alert((error_msg['responseText']));
