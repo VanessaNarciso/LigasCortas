@@ -1,18 +1,50 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{Titulo}}</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.4.1/lux/bootstrap.min.css">
+
+  <meta charset="utf-8">
+  <title>{{titulo}}</title>
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.4.1/lux/bootstrap.min.css">
+  <!-- Custom fonts for this template -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="css/template-1.css" rel="stylesheet">
 </head>
-<body>
-    <h1>
-        {{titulo}}
-    </h1>
-    {{body}}
-    <footer>
-        {{footer}}
-    </footer>
+
+<body id="page-top">
+  <header class="masthead">
+    <div class="container h-100">
+      <div class="row h-100">
+        <div class="col-lg-7 my-auto">
+          <div class="header-content mx-auto">
+            <h1 class="mb-5"> {{titulo}} </h1>
+            <h2  class="mb-5"> 
+              {{descripcion}}
+            </h2>
+          </div>
+        </div>
+        <div class="col-lg-5 my-auto">
+          <div>
+            <img {{imagen}} class="img-fluid" alt="assets/img/temp3.jpg">
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <footer>
+    <div class="container">
+      <p> {{footer}} </p>
+    </div>
+  </footer>
+
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"
+        crossorigin="anonymous"></script>   
+
 </body>
+
 </html>
